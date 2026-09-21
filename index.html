@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>罗技鼠标驱动官网下载 - 官方软件中心与设备管理指南</title>
+    <meta name="description" content="罗技鼠标驱动官网下载页面，提供罗技 G Hub、Logitech Options 等官方驱动程序下载，支持鼠标、键盘、耳机等设备的个性化设置、灯光控制与固件升级。">
+    <meta name="keywords" content="罗技鼠标驱动官网下载,罗技驱动,G Hub下载,罗技G系列驱动,罗技鼠标设置">
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #008f3a;
+            --primary-hover: #00702a;
+            --secondary-color: #1a1a1a;
+            --text-main: #333333;
+            --text-light: #666666;
+            --bg-light: #f5f7fa;
+            --border-color: #e0e0e0;
+            --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            line-height: 1.6;
+            color: var(--text-main);
+            background-color: #ffffff;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Header */
+        header {
+            background-color: #fff;
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--secondary-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            color: var(--primary-color);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            font-weight: 500;
+            font-size: 16px;
+            color: var(--text-main);
+            transition: var(--transition);
+        }
+
+        nav a:hover {
+            color: var(--primary-color);
+        }
+
+        .header-cta {
+            padding: 8px 20px;
+            background-color: var(--secondary-color);
+            color: #fff;
+            border-radius: 4px;
+            font-size: 14px;
+            transition: var(--transition);
+        }
+
+        .header-cta:hover {
+            background-color: var(--primary-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #f0f9f4 0%, #ffffff 100%);
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--secondary-color);
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            margin-bottom: 40px;
+        }
+
+        .search-box {
+            position: relative;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 15px 20px;
+            padding-right: 120px;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            font-size: 16px;
+            outline: none;
+            transition: var(--transition);
+        }
+
+        .search-box input:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(0, 143, 58, 0.1);
+        }
+
+        .search-box button {
+            position: absolute;
+            right: 5px;
+            top: 5px;
+            bottom: 5px;
+            padding: 0 25px;
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+        /* Main Layout */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+        }
+
+        /* Section Styles */
+        .section-title {
+            font-size: 1.5rem;
+            margin-bottom: 25px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--primary-color);
+            display: inline-block;
+        }
+
+        /* Device Cards */
+        .device-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .device-card {
+            background: #fff;
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 25px;
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .device-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--card-shadow);
+            border-color: var(--primary-color);
+        }
+
+        .device-icon {
+            font-size: 48px;
+            margin-bottom: 15px;
+            color: var(--primary-color);
+        }
+
+        .device-card h3 {
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+        .device-card p {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+        }
+
+        .btn-download {
+            background-color: var(--secondary-color);
+            color: #fff;
+            padding: 10px 24px;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 500;
+            transition: var(--transition);
+        }
+
+        .device-card:hover .btn-download {
+            background-color: var(--primary-color);
+        }
+
+        /* Sidebar */
+        aside {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .info-card {
+            background: var(--bg-light);
+            padding: 25px;
+            border-radius: 12px;
+        }
+
+        .info-card h4 {
+            margin-bottom: 15px;
+            color: var(--secondary-color);
+        }
+
+        .info-list li {
+            margin-bottom: 12px;
+            padding-left: 20px;
+            position: relative;
+            font-size: 0.95rem;
+        }
+
+        .info-list li::before {
+            content: "•";
+            color: var(--primary-color);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        .guide-list li {
+            margin-bottom: 10px;
+        }
+
+        .guide-list a {
+            color: var(--text-main);
+            font-size: 0.95rem;
+            display: block;
+            padding: 8px 0;
+            border-bottom: 1px dashed var(--border-color);
+        }
+
+        .guide-list a:hover {
+            color: var(--primary-color);
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            background-color: #f9f9f9;
+            padding: 60px 20px;
+            margin-top: 40px;
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 10px;
+        }
+
+        .faq-question {
+            padding: 20px 0;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 1.1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-question:hover {
+            color: var(--primary-color);
+        }
+
+        .faq-answer {
+            padding-bottom: 20px;
+            color: var(--text-light);
+            display: none;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        .faq-item.active .faq-question::after {
+            content: "-";
+        }
+
+        .faq-item.active .faq-question::before {
+            content: "+";
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-5px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--secondary-color);
+            color: #fff;
+            padding: 60px 20px 20px;
+            margin-top: 60px;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h5 {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a {
+            color: #999;
+            font-size: 0.9rem;
+        }
+
+        .footer-col ul li a:hover {
+            color: #fff;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 20px;
+            color: #666;
+            font-size: 0.85rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                height: auto;
+                padding: 15px;
+                gap: 15px;
+            }
+
+            nav ul {
+                gap: 15px;
+                font-size: 14px;
+            }
+
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--primary-color)">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                </svg>
+                Logitech<span>驱动中心</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#products">产品支持</a></li>
+                    <li><a href="#guides">使用指南</a></li>
+                    <li><a href="#faq">常见问题</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="header-cta">登录账户</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>罗技鼠标驱动官网下载</h1>
+                <p>获取最新版本的 Logitech Options、G Hub 软件及固件更新，解锁您的设备潜能，享受极致游戏体验与精准操控。</p>
+                <div class="search-box">
+                    <input type="text" placeholder="输入鼠标型号（例如：G502 HERO）进行搜索...">
+                    <button>搜索驱动</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Content Area -->
+        <div class="container">
+            <!-- Product Section -->
+            <section id="products">
+                <h2 class="section-title">热门产品驱动下载</h2>
+                <div class="device-grid">
+                    <!-- Card 1 -->
+                    <article class="device-card">
+                        <div class="device-icon">🖱️</div>
+                        <h3>G502 HERO</h3>
+                        <p>高性能无线游戏鼠标，支持 HERO 传感器与八向滚轮。</p>
+                        <a href="#" class="btn-download">下载驱动</a>
+                    </article>
+                    <!-- Card 2 -->
+                    <article class="device-card">
+                        <div class="device-icon">🖱️</div>
+                        <h3>G Pro X Superlight</h3>
+                        <p>轻量化专业电竞鼠标，配备 LIGHTFORCE 物理开关。</p>
+                        <a href="#" class="btn-download">下载驱动</a>
+                    </article>
+                    <!-- Card 3 -->
+                    <article class="device-card">
+                        <div class="device-icon">🖱️</div>
+                        <h3>M720 Triathlon</h3>
+                        <p>磁吸式三模无线鼠标，支持触控板与智能休眠。</p>
+                        <a href="#" class="btn-download">下载驱动</a>
+                    </article>
+                    <!-- Card 4 -->
+                    <article class="device-card">
+                        <div class="device-icon">🖱️</div>
+                        <h3>M590</h3>
+                        <p>无线静音鼠标，通过翻页键快速浏览网页。</p>
+                        <a href="#" class="btn-download">下载驱动</a>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Sidebar -->
+            <aside>
+                <div class="info-card">
+                    <h4>为什么要安装驱动？</h4>
+                    <ul class="info-list">
+                        <li>自定义 DPI 灵敏度与回报率。</li>
+                        <li>设置 RGB 灯光效果与宏命令。</li>
+                        <li>修复按键失灵与连接不稳定问题。</li>
+                        <li>获取最新的固件优化与功能更新。</li>
+                    </ul>
+                </div>
+
+                <div class="info-card">
+                    <h4>软件选择指南</h4>
+                    <ul class="guide-list">
+                        <li><a href="#">Logitech Options（经典版）</a></li>
+                        <li><a href="#">Logitech G Hub（G系列专用）</a></li>
+                        <li><a href="#">Unifying Receiver 设置器</a></li>
+                        <li><a href="#">Logitech Options Plus</a></li>
+                    </ul>
+                </div>
+
+                <div class="info-card" style="background: #e8f5e9; border: 1px solid #c8e6c9;">
+                    <h4 style="color: var(--primary-color);">系统提示</h4>
+                    <p style="font-size: 0.9rem;">请根据您的操作系统（Windows 10/11 或 macOS）选择对应的 32位 或 64位 版本下载。</p>
+                </div>
+            </aside>
+        </div>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="faq-section">
+            <div class="faq-container">
+                <h2 class="section-title" style="text-align: center; border: none; margin-bottom: 30px;">常见问题解答</h2>
+                
+                <div class="faq-item">
+                    <div class="faq-question">下载后如何安装驱动？</div>
+                    <div class="faq-answer">下载安装包后，双击运行。如果是压缩包，请先解压。安装过程中请关闭杀毒软件的实时防护，安装完成后重启电脑即可生效。</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">找不到鼠标型号怎么办？</div>
+                    <div class="faq-answer">请检查鼠标底部的白色标签，上面印有具体的型号编号（通常以 G 开头）。确保输入的型号与标签完全一致。</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">驱动更新后按键失灵怎么恢复？</div>
+                    <div class="faq-answer">进入软件设置界面，点击“恢复默认设置”按钮。如果无效，请尝试卸载驱动并重新安装，或下载旧版本的驱动程序。</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">如何将鼠标连接到多台设备？</div>
+                    <div class="faq-answer">罗技 Unifying 接收器允许您同时连接最多 6 台设备。请使用配套的 Unifying Software 将鼠标配对到接收器上。</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h5>关于驱动中心</h5>
+                <p style="color: #999; font-size: 0.9rem; line-height: 1.6;">
+                    本站提供罗技官方软件与驱动下载服务，致力于为用户提供最便捷的设备管理体验。所有软件资源均源自罗技官网或其授权渠道。
+                </p>
+            </div>
+            <div class="footer-col">
+                <h5>支持与帮助</h5>
+                <ul>
+                    <li><a href="#">联系客服</a></li>
+                    <li><a href="#">设备保修政策</a></li>
+                    <li><a href="#">提交故障报告</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h5>热门资源</h5>
+                <ul>
+                    <li><a href="#">罗技 G Hub 下载</a></li>
+                    <li><a href="#">无线充电器驱动</a></li>
+                    <li><a href="#">键盘宏设置教程</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h5>关注我们</h5>
+                <ul>
+                    <li><a href="#">官方微博</a></li>
+                    <li><a href="#">官方微信公众号</a></li>
+                    <li><a href="#">罗技游戏社区</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023-2024 Logitech Driver Center. All Rights Reserved. 本网站为非官方网站，仅提供资源索引。</p>
+        </div>
+    </footer>
+
+    <script>
+        // FAQ Toggle Logic
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                question.addEventListener('click', () => {
+                    // Close other items
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    // Toggle current item
+                    item.classList.toggle('active');
+                });
+            });
+
+            // Search Button Interaction
+            const searchBtn = document.querySelector('.search-box button');
+            const searchInput = document.querySelector('.search-box input');
+
+            searchBtn.addEventListener('click', () => {
+                const term = searchInput.value.trim();
+                if(term) {
+                    alert('正在为您跳转至罗技官网搜索：' + term);
+                    // In a real app, this would redirect to a search page
+                } else {
+                    searchInput.focus();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
